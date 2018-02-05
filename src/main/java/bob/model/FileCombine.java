@@ -71,6 +71,8 @@ public class FileCombine {
                 while (-1 != (temp = in.read())) {
                     out.write(temp);
                 }
+                out.write('\n');
+                out.write('\n');
                 in.close();
             }
             out.close();
